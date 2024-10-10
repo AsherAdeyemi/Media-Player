@@ -1,0 +1,65 @@
+.player-controls {
+    position: fixed;
+    bottom: 0;
+    left: 230px;
+    width: calc(100% - 230px);
+    background-color: #292b2f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .progress-bar {
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  
+  .progress-slider {
+    width: 100%;
+    background-color: #505357;
+    border-radius: 5px;
+    height: 8px;
+    cursor: pointer;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .controls button {
+    background-color: #3e4147;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .controls button:hover {
+    background-color: #ffa500;
+    color: black;
+  }
+  
+  .prev-btn, .next-btn {
+    font-size: 18px;
+  }
+  
+  .play-btn {
+    font-size: 20px;
+    padding: 10px 30px; /* Larger play button */
+  }
+  
+  .volume-bar {
+    width: 100px;
+    background-color: #505357;
+    border-radius: 5px;
+    height: 8px;
+    cursor: pointer;
+  }
+  

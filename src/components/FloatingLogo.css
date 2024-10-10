@@ -1,0 +1,18 @@
+.floating-logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    color: #ffa500;
+    animation: spin 8s infinite linear; /* Slower spin for retro feel */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

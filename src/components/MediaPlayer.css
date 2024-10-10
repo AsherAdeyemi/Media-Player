@@ -1,0 +1,56 @@
+.media-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(6, 1fr);    /* 6 rows */
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('../assets/logo.png'); /* Ensure the path is correct */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 10px auto;
+    transition: transform 0.5s;
+  }
+  
+  .spin {
+    animation: spin-animation 2s linear infinite;
+  }
+  
+  @keyframes spin-animation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Position the logo above the settings link */
+  .settings-link {
+    position: relative; /* Ensures the settings link has a position context */
+  }
+  
+  .settings-link + .logo {
+    position: absolute; /* Position the logo absolutely */
+    top: -60px; /* Adjust this value as needed */
+    left: 20px; /* Adjust this value as needed */
+  }
+  

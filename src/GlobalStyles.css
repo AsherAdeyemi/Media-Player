@@ -1,0 +1,151 @@
+/* GlobalStyles.css */
+
+/* Common styling for all pages */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .app-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5x6 grid */
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .media-item {
+    background-color: #e6e6e6;
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .media-item:hover {
+    background-color: #d4d4d4;
+  }
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .controls button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .progress-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .progress-bar {
+    width: 100%;
+  }
+  /* General nav menu link styling */
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover */
+.nav-menu a:hover {
+  background-color: #444;
+}
+
+/* Active link styling (except for dropdown links) */
+.nav-menu a.active {
+  background-color: #555;
+}
+
+/* Dropdown container */
+.settings-dropdown {
+  position: relative;
+  margin-top: 10px;
+}
+
+.settings-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* Dropdown menu styles */
+.settings-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Dropdown link styling (consistent regardless of current page) */
+.settings-dropdown-menu li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.settings-dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  display: block;
+}
+
+.settings-dropdown-menu li a:hover {
+  background-color: #444;
+}
+
+/* Ensure no page-specific active state for dropdown links */
+.settings-dropdown-menu li a.active {
+  background-color: transparent;
+}

@@ -1,0 +1,48 @@
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #292b2f;
+    color: #ffffff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  
+  .sidebar .search-bar {
+    margin: 0 15px 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3e4147;
+    border: none;
+    color: white;
+    outline: none;
+  }
+  
+  .sidebar .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .sidebar .menu li {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar .menu li:hover {
+    background-color: #505357;
+    border-left: 4px solid #ffa500; /* Retro-style orange */
+  }
+  
+  .sidebar .menu li.active {
+    background-color: #ffa500;
+    color: black;
+    border-left: 4px solid #292b2f;
+  }
+  
